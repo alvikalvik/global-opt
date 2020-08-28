@@ -1,1 +1,12 @@
-//header here
+.header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-height: 70px;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,136 @@
+.intro {
+    padding-bottom: 40px;
+    @include media-tablet {
+        padding-bottom: 60px;
+    }
+    @include media-laptop {
+        padding-bottom: 80px;
+    } 
+}
+
+.intro__about {
+    color: #ffffff;    
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+    @include media-tablet {           
+        font-size: 18px;        
+    }
+    @include media-laptop {
+        font-size: 24px;
+    } 
+}
+
+.intro__header {
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    color: $maincolor;    
+    font-size: 30px;
+    line-height: 38px;
+    font-weight: 700;
+    text-transform: uppercase;    
+    text-align: center;
+    @include media-tablet {           
+        font-size: 40px;  
+        line-height: 48px;      
+    }
+    @include media-laptop {
+        margin-top: 25px;
+        font-size: 72px;
+        line-height: 80px;
+    } 
+}
+
+.intro__additional-text {
+    color: #ffffff;    
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    @include media-tablet {           
+        font-size: 28px;       
+    }
+    @include media-laptop {
+        margin-top: 9px;
+        font-size: 42px;
+    } 
+}
+
+.intro__divider {
+    position: relative; 
+    width: 100%;
+    height: 10px;
+    margin-top: 20px;
+    &::before, &::after {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        content: "";
+        height: 2px;
+        width: calc(50% - 18px);
+        background-color: #ffffff;
+    }
+    &::before {
+        left: 0;        
+    }
+    &::after {
+        right: 0;        
+    }
+    @include media-tablet {           
+        margin-top: 25px;       
+    }
+    @include media-laptop {
+        margin-top: 35px;
+    }
+}
+
+.intro__divider-circle {
+    width: 10px;
+    height: 10px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 100%;
+}
+
+.intro__list {
+    @include reset-list;
+    margin-top: 15px;
+    @include media-tablet {           
+        margin-top: 20px;       
+    }
+    @include media-laptop {
+        margin-top: 25px;
+    }
+}
+
+.intro__list-item {
+    position: relative;
+    padding-top: 65px;
+    margin-top: 30px;
+}
+
+.intro__list-item-icon {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;    
+}
+
+.intro__list-item-text {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 250px;
+    color: #ffffff;    
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    text-align: center;    
+}
+
+.intro__btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+}

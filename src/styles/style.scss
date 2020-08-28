@@ -1,6 +1,12 @@
-@import "../../node_modules/normalize.css/normalize";
+// @import "../../node_modules/normalize.css/normalize";
+
+@import "../../node_modules/bootstrap/scss/bootstrap-reboot";
+
+@import "../../node_modules/bootstrap/scss/bootstrap-grid";
 
 @import "mixins/media";
+
+@import "mixins/mixins";
 
 @import "utils/variables";
 
@@ -9,6 +15,14 @@
 @import "common/global";
 
 @import "common/header";
+
+@import "common/logo";
+
+@import "common/menu";
+
+@import "common/contacts";
+
+@import "common/intro";
 
 @import "common/footer";
 
