@@ -15,6 +15,7 @@ body {
 
 img {
     max-width: 100%;
+    height: auto;
 }
 
 .header-intro-wrapper {
@@ -47,13 +48,45 @@ img {
     &:hover {
         border: 2px solid #ffffff;        
     }
+    &--large {
+        width: 230px;
+        height: 57px;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 17px;    
+        border-radius: 28px;
+    }
 }
 
-.btn--large {
-    width: 230px;
-    height: 57px;
-    font-size: 15px;
+
+
+.section-header {
+    margin: 0;
+    padding: 0;
+    color: #2e2e2e;    
+    font-size: 20px;
     font-weight: 700;
-    line-height: 17px;    
-    border-radius: 28px;
+    text-transform: uppercase;
+    text-align: center;
+    @include media-tablet {
+        font-size: 24px;
+    }
+    @include media-laptop {
+        font-size: 26px;
+    }
+    &--underlined {
+        position: relative;
+        padding-bottom: 20px;
+        &::before {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            content: "";
+            width: 148px;
+            height: 1px;
+            background-color: $maincolor;
+        }
+
+    }
 }
