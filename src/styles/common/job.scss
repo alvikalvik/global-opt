@@ -46,17 +46,8 @@
 
 .job__item-img {
     display: block;
-    width: 360px;
-    height: 210px;
+    margin: 0 auto;
     background-color: #3eb0ef;
-    @include media-tablet {
-        width: 100%;
-        height: auto;
-    }
-    @include media-laptop {
-        width: 360px;
-        height: 210px;
-    }
 }
 
 .job__item-header {
@@ -77,6 +68,9 @@
 }
 
 .job__item-text {
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
     color: #3a3a3a;    
     font-size: 14px;
     font-weight: 300;
