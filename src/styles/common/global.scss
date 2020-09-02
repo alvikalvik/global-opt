@@ -46,7 +46,8 @@ img {
     text-transform: uppercase;
     transition: all 0.3s;
     &:hover {
-        border: 2px solid #ffffff;        
+        border: 2px solid #ffffff;   
+        background-color: #dc5238;     
     }
     &--large {
         width: 230px;
