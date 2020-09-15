@@ -1,0 +1,112 @@
+.consult {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    @include media-tablet {
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+    @include media-laptop {
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+}
+
+.consult__header {
+    margin: 0;
+    padding: 0;
+    color: #3a3a3a;    
+    font-size: 24px;
+    font-weight: 400;    
+    text-align: center;
+    @include media-tablet {
+        font-size: 26px;
+    }
+    @include media-laptop {
+        font-size: 28px;
+    }
+}
+
+.consult__form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    padding-top: 67px;
+    padding-bottom: 50px;
+    width: 100%;
+    border: 1px solid #c4c4c4;
+    &::before {
+        position: absolute;
+        top: -51px;
+        left: 50%;
+        transform: translateX(-50%);
+        content: "";
+        width: 120px;
+        height: 102px;        
+        background-color: #fff;
+    }
+    &::after {
+        position: absolute;
+        top: -51px;
+        left: 50%;
+        transform: translateX(-50%);
+        content: "";
+        width: 102px;
+        height: 102px;
+        border: 1px solid $maincolor;
+        border-radius: 100%;
+        background-color: #fff;
+        background-image: url(../img/consultant-icon.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    @include media-laptop {
+        flex-direction: row;
+    }
+}
+
+.consult__form-input {
+    margin-bottom: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 270px;
+    height: 48px;
+    border: 1px solid #c4c4c4;
+    border-radius: 24px;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 300;
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+    @include media-tablet {
+        width: 500px;
+        margin-bottom: 10px;
+    }
+    @include media-laptop {
+        width: 270px;
+        margin-bottom: 0;
+        margin-right: 5px;
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+}
+
+.consult__btn-wrapper {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+    background-color: #ffffff;
+    width: 200px;
+    height: 45px;
+}
+
+.consult__btn {
+    display: block;
+    margin: 0 auto;
+    width: 180px;
+}

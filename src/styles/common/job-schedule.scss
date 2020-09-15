@@ -1,0 +1,59 @@
+.job-schedule {
+    padding-top: 40px;
+    padding-bottom: 35px;
+    background-color: #f3f3f3;
+    @include media-tablet {
+        padding-top: 45px;
+        padding-bottom: 40px;
+    }
+    @include media-laptop {
+        padding-top: 50px;
+        padding-bottom: 45px;
+    }
+}
+
+.job-schedule__list {
+    @include reset-list;
+}
+
+.job-schedule__item {
+    position: relative;
+    margin-top: 25px;
+    padding-top: 60px;
+    &::before {
+        position: absolute;
+        left: 0;
+        top: 0;        
+        content: "";
+        width: 100%;
+        height: 60px;
+    }
+    @for $i from 1 through 7 {
+        &--icon#{$i}::before {
+            background-image: url(../img/schedule-icon#{$i}.png);
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+    }
+    @include media-tablet {
+        margin-top: 30px;
+    }
+    @include media-laptop {
+        margin-top: 35px;
+    }
+}
+
+.job-schedule__item-header {
+    color: $maincolor;   
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.job-schedule__item-text {
+    color: #3a3a3a;    
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    text-align: center;
+}
