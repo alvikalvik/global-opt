@@ -81,6 +81,10 @@
     &:last-of-type {
         margin-bottom: 0;
     }
+    &:focus {
+        outline: none;
+        border: 1px solid $maincolor;
+    }
     @include media-tablet {
         width: 500px;
         margin-bottom: 10px;
