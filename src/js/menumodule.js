@@ -6,7 +6,7 @@ export default function menuModule() {
     menuList.classList.remove('menu__list--active');
 
     hamburger.addEventListener('click', () => {
-        if(hamburger.classList.contains('menu__hamburger--active')) {
+        if (hamburger.classList.contains('menu__hamburger--active')) {
             hamburger.classList.remove('menu__hamburger--active');
             menuList.classList.remove('menu__list--active');
         } else {
