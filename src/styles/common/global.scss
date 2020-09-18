@@ -50,6 +50,10 @@ img {
         border: 2px solid #ffffff;   
         background-color: #dc5238;     
     }
+    &:active, &:focus {
+        outline: none;
+        border: 1px solid #ffffff;
+    }
     &--large {
         width: 230px;
         height: 57px;
