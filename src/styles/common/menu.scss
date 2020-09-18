@@ -35,10 +35,6 @@
         background-color: #ffffff;
         box-shadow: 0 10px #ffffff, 0 20px #ffffff;
     }
-    &:hover::before {
-        background-color: $maincolor;
-        box-shadow: 0 10px $maincolor, 0 20px $maincolor;
-    }
     @include media-tablet {
         display: none;
     } 
@@ -85,6 +81,10 @@
         background-color: transparent;
         transform: translateX(0);
     } 
+}
+
+.menu__list--active {
+    transform: translateX(0);
 }
 
 .menu__item {
