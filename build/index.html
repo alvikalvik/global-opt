@@ -16,12 +16,12 @@
                 <nav class="menu">
                     <div class="menu__hamburger"></div> <!--   menu__hamburger--active -->
                     <ul class="menu__list">
-                        <li class="menu__item"><a href="#" class="menu__link">Преимущества</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Наша работа</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Цены</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Схема работы</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Отзывы</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+                        <li class="menu__item"><a href="#advantages" class="menu__link">Преимущества</a></li>
+                        <li class="menu__item"><a href="#job" class="menu__link">Наша работа</a></li>
+                        <li class="menu__item"><a href="#prices" class="menu__link">Цены</a></li>
+                        <li class="menu__item"><a href="#job-schedule" class="menu__link">Схема работы</a></li>
+                        <li class="menu__item"><a href="#testimonials" class="menu__link">Отзывы</a></li>
+                        <li class="menu__item"><a href="#map" class="menu__link">Контакты</a></li>
                         
                     </ul>                                                        
                 </nav>
@@ -65,7 +65,7 @@
         </section>
     </div>
 
-    <section class="advantages">
+    <section class="advantages" id="advantages">
         <div class="container">
             <h2 class="section-header advantages__header">Преимущества работы с GlobalOpt</h2>
             <ul class="row advantages__list">
@@ -105,7 +105,7 @@
         </div>
     </section>
 
-    <section class="job">
+    <section class="job" id="job">
         <div class="container">
             <h2 class="section-header section-header--underlined job__header">Наша работа - больше чем просто доставка</h2>
             <p class="job__text">Мы организуем перевозки из Китая - оперативно и надежно, с учетом особенностей груза
@@ -137,7 +137,7 @@
         </div>
     </section>
 
-    <section class="prices">
+    <section class="prices" id="prices">
         <div class="container">
             <h2 class="section-header section-header--underlined prices__header">Цены на любой вариант доставки</h2>
             <p class="prices__text">Перевозки грузов на дальние расстояния без каких-либо ограничений. Любой груз доставим вовремя. </p>
@@ -182,13 +182,13 @@
         </div>
     </section>
 
-    <section class="consult">
+    <section class="consult" id="consult">
         <div class="container">
             <h2 class="consult__header">Заказать бесплатную консультацию</h2>
             <form action="#" class="consult__form">
-                <input type="text" class="consult__form-input" placeholder="Ваше имя...">
-                <input type="tel" class="consult__form-input" placeholder="Ваш телефон...">
-                <input type="email" class="consult__form-input" placeholder="Ваш e-mail...">
+                <input type="text" class="consult__form-input" name="consult__name" placeholder="Ваше имя...">
+                <input type="tel" class="consult__form-input" name="consult__tel" placeholder="Ваш телефон...">
+                <input type="email" class="consult__form-input" name="consult__email" placeholder="Ваш e-mail...">
                 <div class="consult__btn-wrapper">
                     <button type="submit" class="btn consult__btn">Отправить заявку</button>
                 </div>                
@@ -203,7 +203,7 @@
         </div>
     </section>
 
-    <section class="job-schedule">
+    <section class="job-schedule" id="job-schedule">
         <div class="container">
             <h2 class="section-header job-schedule__header">Схема работы с нами</h2>
             <ul class="row justify-content-center job-schedule__list">
@@ -239,7 +239,7 @@
         </div>
     </section>
 
-    <section class="testimonials">
+    <section class="testimonials" id="testimonials">
         <div class="container">
             <h2 class="section-header section-header--underlined testimonials__header">Отзывы наших клиентов</h2>
             <p class="testimonials__text">Мы всегда стараемся помочь клиентам, что бы они обращались к нам снова</p>
@@ -273,17 +273,17 @@
                     <div class="write-us__form-subheader-text">Напишите нам!</div>
                 </div>
                 <div class="write-us__form-inputs-wrapper">
-                    <input type="text" class="write-us__form-input" placeholder="Ваше имя...">
-                    <input type="tel" class="write-us__form-input" placeholder="Ваш телефон...">
-                    <input type="email" class="write-us__form-input" placeholder="Ваш e-mail...">
-                    <textarea name="" id="" cols="30" rows="10" class="write-us__form-textarea" placeholder="Сообщение..."></textarea> 
+                    <input type="text" class="write-us__form-input" name="write-us__name" placeholder="Ваше имя...">
+                    <input type="tel" class="write-us__form-input" name="write-us__tel" placeholder="Ваш телефон...">
+                    <input type="email" class="write-us__form-input" name="write-us__email" placeholder="Ваш e-mail...">
+                    <textarea name="write-us__message" id="write-us__message" cols="30" rows="10" class="write-us__form-textarea" placeholder="Сообщение..."></textarea> 
                 </div>               
                 <button type="submit" class="btn write-us__btn">Отправить заявку</button>                
             </form>
         </div>
     </section>
 
-    <section class="map">
+    <section class="map" id="map">
         <img src="img/map-pinter.png" width="62" height="63" alt="" class="map__pointer">
         <address class="map__address">
             <span class="map__address-city">г. Москва</span>
@@ -293,6 +293,30 @@
             <a href="mailto:info@glopt.ru" class="map__address-email">info@glopt.ru</a>
         </address>
     </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top-wrapper">
+                <a class="logo">
+                    <img src="img/logo.png" width="68" height="71" srcset="img/logo.png 1x, img/logo@2x.png 1.5x" alt="Global Opt Logo" class="logo__img logo__img--footer">
+                </a>
+                <div class="footer__slogan">Global Opt - Доставка грузов из Китая в Россию и СНГ</div>
+    
+                <div class="contacts">
+                    <div class="contacts__tel-wrapper">
+                        <div class="contacts__text">Есть вопросы?</div>
+                        <a href="tel:+79264230100" class="contacts__tel">+7 (926) 423 01 00</a>
+                    </div>
+                    <button type="button" class="btn">Перезвоните мне</button>
+                </div>
+            </div>
+            <div class="footer__bottom-wrapper">
+                <div class="footer__copy">&copy; 2020 Все права защищены</div>
+                <a href="#" class="footer__confidential-link">Политика конфидециальности</a>   
+                <div class="footer__designed-by">Создание сайта:</div>             
+            </div>
+        </div>    
+    </footer>
 
     <script src="js/main.min.js"></script>    
 </body>
